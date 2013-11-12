@@ -34,7 +34,7 @@ Or install it yourself as:
 just need to require it in your code:
 
 ```
-require 'highline-color'
+require 'highline/color'
 ```
 
 ## Contributing
