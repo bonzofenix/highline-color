@@ -10,5 +10,12 @@ module Highline
       cs[:warning]  = [:bold, :yellow]
       cs[:prompt]   = [:bold, :blue]
     end
+
+    HighLine.color_scheme.keys.each do  |schema|
+      define_method "say_#{schema}" do |msg|
+        say color(msg, schema)
+      end
+    end
   end
 end
+
