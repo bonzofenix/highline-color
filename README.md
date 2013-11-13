@@ -37,6 +37,12 @@ just need to require it in your code:
 require 'highline/color'
 ```
 
+and then include the module  in case you want helpers too!
+
+```
+include Highline::Color
+```
+
 ## Contributing
 
 1. Fork it
