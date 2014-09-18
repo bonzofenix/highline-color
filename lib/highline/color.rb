@@ -15,6 +15,10 @@ module Highline
       define_method "say_#{schema}" do |msg|
         say color(msg, schema)
       end
+
+      define_method "agree_#{schema}" do |msg|
+        agree color(msg, schema)
+      end
     end
   end
 end
