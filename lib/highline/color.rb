@@ -12,11 +12,15 @@ module Highline
     end
 
     HighLine.color_scheme.keys.each do  |schema|
-      %w{ say agree ask }.each do |m|
-        define_method "#{m}_#{schema}" do |msg|
+        define_method "say_#{schema}" do |msg|
           say color(msg, schema)
         end
-      end
+        define_method "agree_#{schema}" do |msg|
+          say color(msg, schema)
+        end
+        define_method "ask_#{schema}" do |msg|
+          say color(msg, schema)
+        end
     end
   end
 end
